@@ -1,56 +1,121 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* General container styling */
+.container {
+  padding: 16px;
+  border: 1px solid #17ce85;
+  margin-bottom: 15px;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+/* Styling for the username and password labels */
+label {
+  font-weight: bold;
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
+/* Input field styling */
+input[type="text"], input[type="password"], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #97e50f;
+  box-sizing: border-box;
 }
 
-header nav ul li {
-    margin: 0 15px;
+/* Styling for the Remember me checkbox */
+input[type="checkbox"] {
+  margin-top: 16px;
 }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
+/* Styling for the Cancel button */
+.cancelbtn {
+  background-color: #f44336;
+  color: rgba(251, 248, 246, 0.926);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
 }
 
-.hero {
-    text-align: center;
-    padding: 50px;
-    background-color: #f4f4f4;
+.cancelbtn:hover {
+  opacity: 0.8;
 }
 
-.hero h1 {
-    margin: 0 0 20px;
+/* Container with different background color */
+.container.darker {
+  background-color: #b4fffed4;
 }
 
-.hero p {
-    margin: 0 0 20px;
+/* Image styling */
+.container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
-button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
+/* Right-aligned text and images */
+.container.darker img.right {
+  float: right;
+  margin-left: 20px;
 }
 
-.embed {
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
+/* Styling for chat bubbles */
+.container p {
+  margin: 0;
+  padding: 10px;
+  background-color: #ddd;
+  border-radius: 10px;
+  display: inline-block;
+  max-width: 80%;
+}
+
+.container.darker p {
+  background-color: #ccc;
+}
+
+/* Right-aligned chat bubble */
+.container.darker p {
+  background-color: #ddd;
+}
+
+/* Time stamp styling */
+span.time-right {
+  float: right;
+  color: #aaa;
+}
+
+span.time-left {
+  float: left;
+  color: #999;
+}
+
+/* Chat popup form */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Button styling in the chat form */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .btn:hover {
+  opacity: 1;
 }
